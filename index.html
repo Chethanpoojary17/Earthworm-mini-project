@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <header>We have won a Million hearts, we will win yours too!</header>
+<!-- partial:index.partial.html -->
+<form action="register.php" method="POST" class='form' >
+
+  <p class='field required'>
+    <label class='label required' for='name'>Full name</label>
+    <input class='text-input' id='name' name='name' required type='text' >
+  </p>
+  <!--<p class='field required half'>
+    <label class='label' for='email'>E-mail</label>
+    <input class='text-input' id='email' name='email' required type='email'>
+  </p>-->
+ 
+  <p class='field half required error'>
+    <label class='label' for='login'>Phone</label>
+    <input class='text-input' id='login' name='phone' required type='number' min="1000000000" max="9999999999" >
+  </p>
+   <p class='field required half'>
+    <label class='label' for='phone'>Password</label>
+    <input class='text-input' id='phone' name='password' required type='password' >
+  </p>
+  <p class='field half required'>
+    <label class='label' for='password'>Age</label>
+    <input class='text-input' id='password' name='age' required type='number' min="12" max="100">
+  </p>
+  <div class='field'>
+    <label class='label'>INTERESTED</label>
+    <ul class='checkboxes'>
+      <li class='checkbox'>
+        <input class='checkbox-input' id='choice-0' name='choice' type='checkbox' value='Agriculture'>
+        <label class='checkbox-label' for='choice-0'>Agriculture</label>
+      </li>
+      <li class='checkbox'>
+        <input class='checkbox-input' id='choice-1' name='choice' type='checkbox' value='Horticulture'>
+        <label class='checkbox-label' for='choice-1'>Horticulture</label>
+      </li>
+      <li class='checkbox'>
+        <input class='checkbox-input' id='choice-2' name='choice' type='checkbox' value='Sericulture'>
+        <label class='checkbox-label' for='choice-2'>Sericulture</label>
+      </li>
+      <!--<li class='checkbox'>
+        <input class='checkbox-input' id='choice-3' name='choice' type='checkbox' value='3'>
+        <label class='checkbox-label' for='choice-3'></label>
+      </li>
+      <li class='checkbox'>
+        <input class='checkbox-input' id='choice-4' name='choice' type='checkbox' value='4'>
+        <label class='checkbox-label' for='choice-4'>Swimming</label>
+      </li> -->
+    </ul>
+  </div>
+  <div class='field'>
+    <label class='label'>Experience</label>
+    <ul class='options'>
+      <li class='option'>
+        <input class='option-input' id='option-0' name='option' type='radio' value='Beginner'>
+        <label class='option-label' for='option-0'>Beginner</label>
+      </li>
+      <li class='option'>
+        <input class='option-input' id='option-1' name='option' type='radio' value='Intermediate'>
+        <label class='option-label' for='option-1'>Intermediate</label>
+      </li>
+      <li class='option'>
+        <input class='option-input' id='option-2' name='option' type='radio' value='expert'>
+        <label class='option-label' for='option-2'>expert</label>
+      </li>
+       <!--<li class='option'>
+        <input class='option-input' id='option-3' name='option' type='radio' value='3'>
+        <label class='option-label' for='option-3'>Commercial Crops</label>
+      </li>
+      <li class='option'>
+        <input class='option-input' id='option-4' name='option' type='radio' value='4'>
+        <label class='option-label' for='option-4'>Gardening</label>
+      </li>
+     <li class='option'>
+        <input class='option-input' id='option-5' name='option' type='radio' value='5'>
+        <label class='option-label' for='option-5'>Ember</label>
+      </li>
+      <li class='option'>
+        <input class='option-input' id='option-6' name='option' type='radio' value='6'>
+        <label class='option-label' for='option-6'>Meteor</label>
+      </li>
+      <li class='option'>
+        <input class='option-input' id='option-7' name='option' type='radio' value='7'>
+        <label class='option-label' for='option-7'>Knockout</label>
+      </li> -->
+    </ul>
+  </div> 
+ <!-- <p class='field'>
+    <label class='label' for='about'>About YOURSELF</label>
+    <textarea class='textarea' cols='50' id='about' name='about' rows='4'></textarea>
+  </p>
+   
+   
+  <p class='field half'>
+    <label class='label' for='select'>Position</label>
+    <select class='select' id='select'>
+      <option selected value=''></option>
+      <option value='Beginner'>Beginner</option>
+      <option  value='Intermediate'>Intermediate</option>
+      <option  value='Expert'>Expert</option>
+    </select>
+  </p>-->
+  <p class='field half'>
+    <input class='button' type='submit' value='REGISTER'>
+  </p>
+</form>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.customSelect/0.5.1/jquery.customSelect.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
